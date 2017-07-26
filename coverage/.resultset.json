@@ -26,8 +26,52 @@
         0,
         null,
         null
+      ],
+      "/Users/jimszalewski/turing/2module/exercises/hashcards/lib/round.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/jimszalewski/turing/2module/exercises/hashcards/lib/guess.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1501089672
+    "timestamp": 1501091247
   }
 }
