@@ -34,4 +34,28 @@ class GuessTest < Minitest::Test
 
     refute guess.correct?
   end
+
+  def test_it_can_give_feedback_on_a_correct_answer
+    question = "What is the capital of Alaska?"
+    answer = "Juneau"
+    response = "Juneau"
+    expected = 'Correct!'
+    card = Card.new(question: question, answer: answer)
+    guess = Guess.new(response, card)
+
+    assert guess.correct?
+    assert_equal expected, guess.feedback
+  end
+
+  def test_it_can_give_feedback_on_an_incorrect_answer
+    question = "What is the capital of Alaska?"
+    answer = "Juneau"
+    response = "Anchorage"
+    expected = 'Incorrect.'
+    card = Card.new(question: question, answer: answer)
+    guess = Guess.new(response, card)
+
+    refute guess.correct?
+    assert_equal expected, guess.feedback
+  end
 end

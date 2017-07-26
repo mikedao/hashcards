@@ -8,4 +8,8 @@ class Guess
   def correct?
     response == card.answer
   end
+
+  def feedback
+    correct? ? 'Correct!' : 'Incorrect.'
+  end
 end
