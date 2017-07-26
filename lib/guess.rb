@@ -7,12 +7,16 @@ class Guess
   end
 
   def correct?
-    true if response == card.answer
+    if response == card.answer
+      true
+    else
+      false
+    end
   end
 
   def feedback
     if correct?
-      "Correct"
+      "Correct!"
     else
       "Wrong!"
     end
