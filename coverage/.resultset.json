@@ -1,18 +1,12 @@
 {
   "Unit Tests": {
     "coverage": {
-      "/Users/williamratterman/Turing/mod2/lessons/hashcards/lib/card.rb": [
-        null,
+      "/Users/williamratterman/Turing/mod2/lessons/hashcards/lib/guess.rb": [
         1,
-        1,
-        null,
-        1,
-        0,
-        0,
         null,
         null
       ]
     },
-    "timestamp": 1501087913
+    "timestamp": 1501088296
   }
 }
