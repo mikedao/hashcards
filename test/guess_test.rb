@@ -14,4 +14,24 @@ class GuessTest < Minitest::Test
     assert_equal guess.response, response
     assert_equal guess.card, card
   end
+
+  def test_it_knows_when_the_response_is_correct
+    question = "What is the capital of Alaska?"
+    answer = "Juneau"
+    response = "Juneau"
+    card = Card.new(question: question, answer: answer)
+    guess = Guess.new(response, card)
+
+    assert guess.correct?
+  end
+
+  def test_it_knows_when_the_response_is_incorrect
+    question = "What is the capital of Alaska?"
+    answer = "Juneau"
+    response = "Anchorage"
+    card = Card.new(question: question, answer: answer)
+    guess = Guess.new(response, card)
+
+    refute guess.correct?
+  end
 end

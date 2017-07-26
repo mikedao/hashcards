@@ -4,4 +4,8 @@ class Guess
     @response = response
     @card = card
   end
+
+  def correct?
+    response == card.answer
+  end
 end
