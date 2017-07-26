@@ -69,7 +69,7 @@ A round will be the object that processes responses and records guesses. Use TDD
 
 ```ruby
 card_1 = Card.new(question: "What is the capital of Alaska?", answer: "Juneau")
-card_2 = Card.new("Approximately how many miles are in one astronomical unit?", "93,000,000")
+card_2 = Card.new(question: "Approximately how many miles are in one astronomical unit?", answer: "93,000,000")
 deck = Deck.new([card_1, card_2])
 round = Round.new(deck)
 round.deck
