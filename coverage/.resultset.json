@@ -13,16 +13,10 @@
         null,
         null
       ],
-      "/Users/jimszalewski/turing/2module/exercises/hashcards/lib/guess.rb": [
+      "/Users/jimszalewski/turing/2module/exercises/hashcards/lib/deck.rb": [
         1,
         null,
         1,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
         null,
         1,
         0,
@@ -30,14 +24,10 @@
         null,
         1,
         0,
-        0,
-        null,
-        0,
-        null,
         null,
         null
       ]
     },
-    "timestamp": 1501089128
+    "timestamp": 1501089672
   }
 }
