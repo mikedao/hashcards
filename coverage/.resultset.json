@@ -1,0 +1,24 @@
+{
+  "Unit Tests": {
+    "coverage": {
+      "/Users/marcfidelman/turing/2mod/hashcards/lib/card.rb": [
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1501089688
+  }
+}
