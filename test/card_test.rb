@@ -1,5 +1,5 @@
 require_relative "test_helper"
-require_relative "../lib/card"
+require "./lib/card"
 
 class CardTest < Minitest::Test
   def test_it_initializes_with_question_and_answer
