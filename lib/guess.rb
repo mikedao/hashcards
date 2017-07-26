@@ -1,3 +1,4 @@
+require 'pry'
 class Guess 
 
   def initialize(guess, card)
@@ -15,13 +16,19 @@ class Guess
 
   def correct?
     if @guess == @card.c_hash.values[1]
-      return true
+       true
     else
-      return false
+      false
     end
   end
 
- 
+  def feedback
+    if @guess == @card.c_hash.values[1]
+      puts "Correct"
+    else
+      puts "Incorrect"
+    end
+  end
 end
 
 

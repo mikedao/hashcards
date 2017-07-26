@@ -23,7 +23,7 @@ class TestCard < Minitest::Test
  
   assert_instance_of Card, guess.card
   assert_equal result, guess.response
-  refute  guess.correct?
+  refute guess.correct?
   assert_equal "Incorrect.", guess.feedback
 
   end
