@@ -19,4 +19,6 @@ class CardTest < Minitest::Test
 
     assert_equal "Juneau", card.answer
   end
+
+  
 end

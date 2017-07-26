@@ -9,6 +9,21 @@
         0,
         null,
         null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/marcfidelman/turing/2mod/hashcards/lib/card.rb": [
@@ -29,6 +44,6 @@
         null
       ]
     },
-    "timestamp": 1501090264
+    "timestamp": 1501090865
   }
 }
