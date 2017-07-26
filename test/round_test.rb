@@ -41,6 +41,24 @@ class RoundTest < Minitest::Test
 
     guess = round.record_guess("Juneau")
 
-    assert_equal round.current_card, card_2
+    assert_equal card_2, round.current_card
+  end
+
+  def test_the_round_updates_with_each_guess
+    assert_equal round.current_card, card_1
+
+    guess = round.record_guess("Juneau")
+
+    assert_equal 1, round.guesses.count
+    assert_equal 'Correct!', round.guesses.last.feedback
+    assert_equal 1, round.number_correct
+
+    assert_equal card_2, round.current_card
+
+    guess2 = round.record_guess('2')
+
+    assert_equal 2, round.guesses.count
+    assert_equal 'Incorrect.', round.guesses.last.feedback
+    assert_equal 1, round.number_correct
   end
 end
