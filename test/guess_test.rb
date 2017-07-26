@@ -12,14 +12,16 @@ class TestGuess < MiniTest::Test
   end
 
   def test_guess_can_be_correct
-    assert_equal(@guess1.response), "Juneau"
-    assert(@guess1.correct?)
-    assert_equal(@guess1.feedback), "Correct!"
+    assert_equal @card1, @guess1.card
+    assert_equal "Juneau", @guess1.response
+    assert @guess1.correct?
+    assert_equal "Correct!", @guess1.feedback
   end
 
   def test_guess_can_be_incorrect
-    assert_equal(@guess2.response), "Juneau"
-    refute(@guess2.correct?)
-    assert_equal(@guess2.feedback), "Incorrect."
+    assert_equal @card2, @guess2.card
+    assert_equal "Juneau", @guess2.response
+    refute @guess2.correct?
+    assert_equal "Incorrect.", @guess2.feedback
   end
 end
