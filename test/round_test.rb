@@ -21,4 +21,11 @@ class RoundTest < Minitest::Test
   def test_it_knows_the_current_card
     assert_equal round.current_card, card_1
   end
+
+  def test_it_can_record_a_guess
+    guess = round.record_guess("Juneau")
+
+    assert_instance_of Guess, guess
+    assert_equal 1, round.guesses.count
+  end
 end
