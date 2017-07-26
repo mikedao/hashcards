@@ -1,6 +1,4 @@
 require './test/test_helper'
-require './lib/guess'
-require './lib/card'
 
 class GuessTest < Minitest::Test
   attr_reader :correct_guess, :incorrect_guess

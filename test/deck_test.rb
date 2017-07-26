@@ -1,6 +1,4 @@
 require './test/test_helper'
-require './lib/deck'
-require './lib/card'
 
 class DeckTest < Minitest::Test
 

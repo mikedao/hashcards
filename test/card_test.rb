@@ -1,5 +1,4 @@
 require './test/test_helper'
-require './lib/card'
 
 class CardTest < Minitest::Test
 
@@ -28,12 +27,5 @@ class CardTest < Minitest::Test
 
     assert_equal expected_1, actual_1
     assert_equal expected_2, actual_2
-  end
-
-  def test_it_is_nil_by_default
-    card = Card.new
-
-    assert_nil card.question
-    assert_nil card.answer
   end
 end
