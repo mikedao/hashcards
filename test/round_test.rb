@@ -35,4 +35,12 @@ class RoundTest < Minitest::Test
 
     assert_equal 1, round.number_correct
   end
+
+  def test_the_current_card_changes_after_recording_guess
+    assert_equal round.current_card, card_1
+
+    guess = round.record_guess("Juneau")
+
+    assert_equal round.current_card, card_2
+  end
 end

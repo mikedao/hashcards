@@ -1,19 +1,21 @@
 require_relative 'guess'
 
 class Round
-  attr_reader :deck, :guesses
+  attr_reader :deck, :guesses, :cards
 
   def initialize(deck)
     @deck = deck
+    @cards = deck.cards
     @guesses = []
   end
 
   def current_card
-    @deck.cards.first
+    cards.first
   end
 
   def record_guess(guess)
     new_guess = Guess.new(guess, current_card)
+    cards.delete(current_card)
     guesses << new_guess
     new_guess
   end
