@@ -17,7 +17,7 @@ class DeckTest < Minitest::Test
 
   def test_it_has_cards
     assert_instance_of Array, @deck.cards
-    assert_equal 3, @deck.count
-    assert_equal "Juneau", @deck.cards[0].answer
+    assert_equal 3, @deck.cards.count
+    assert_equal "Juneau", @deck.cards.first.answer
   end
 end

@@ -1,20 +1,6 @@
 {
   "Unit Tests": {
     "coverage": {
-      "/Users/williamratterman/Turing/mod2/lessons/hashcards/lib/deck.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
       "/Users/williamratterman/Turing/mod2/lessons/hashcards/lib/card.rb": [
         null,
         1,
@@ -27,6 +13,6 @@
         null
       ]
     },
-    "timestamp": 1501089535
+    "timestamp": 1501089740
   }
 }
