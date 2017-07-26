@@ -28,4 +28,27 @@ class RoundTest < Minitest::Test
 
     assert_equal "Juneau", round.guesses[0].response
   end
+
+  def test_it_checks_guess_against_current_card
+    card_1 = Card.new(question: "What is the capital of Alaska?", answer: "Juneau")
+    card_2 = Card.new(question: "Approximately how many miles are in one astronomical unit?", answer: "93,000,000")
+    deck = Deck.new([card_1, card_2])
+    round = Round.new(deck)
+    round.record_guess("Juneau")
+
+    assert_equal "Correct", round.guesses.first.feedback
+  end
+
+  def test_it_increments_number_correct_when_guess_is_correct
+    card_1 = Card.new(question: "What is the capital of Alaska?", answer: "Juneau")
+    card_2 = Card.new(question: "Approximately how many miles are in one astronomical unit?", answer: "93,000,000")
+    deck = Deck.new([card_1, card_2])
+    round = Round.new(deck)
+
+    assert_equal 0, round.number_correct
+
+    round.record_guess("Juneau")
+
+    assert_equal 1, round.number_correct
+  end
 end

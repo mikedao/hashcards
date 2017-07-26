@@ -13,4 +13,8 @@ class Round
   def record_guess(guess)
     @guesses << Guess.new(guess, current_card)
   end
+
+  def number_correct
+    @guesses.count {|guess| guess.correct?}
+  end
 end
