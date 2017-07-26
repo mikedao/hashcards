@@ -1,0 +1,74 @@
+{
+  "Unit Tests": {
+    "coverage": {
+      "/Users/jimmytruong/turing/2module/exercises/hashcards/lib/card.rb": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/jimmytruong/turing/2module/exercises/hashcards/lib/guess.rb": [
+        1,
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/jimmytruong/turing/2module/exercises/hashcards/lib/deck.rb": [
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/jimmytruong/turing/2module/exercises/hashcards/lib/round.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1501091769
+  }
+}
