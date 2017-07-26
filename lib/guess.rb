@@ -22,7 +22,7 @@ class Guess
     if correct? == true
       "Correct!"
     else
-      "Incorrect!"
+      "Incorrect."
     end
   end
 
