@@ -1,0 +1,57 @@
+{
+  "Unit Tests": {
+    "coverage": {
+      "/Users/jfl/turing/2module/classwork/hashcards/test/deck_test.rb": [
+        1,
+        null,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/jfl/turing/2module/classwork/hashcards/test/guess_test.rb": [
+        1,
+        null,
+        1,
+        1,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null
+      ],
+      "/Users/jfl/turing/2module/classwork/hashcards/test/round_test.rb": [
+        1,
+        null,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1501091937
+  }
+}
