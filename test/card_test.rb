@@ -17,9 +17,4 @@ class CardTest < Minitest::Test
     assert_equal "What is the capital of Alaska?", card.question
     assert_equal "Juneau", card.answer
   end
-
-
-  
-
-
 end

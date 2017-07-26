@@ -30,7 +30,4 @@ class GuessTest < Minitest::Test
     assert_equal guess.correct?, false
     assert_equal guess.feedback, "Incorrect!"
   end
-  # require 'pry'; binding.pry
-
-
 end

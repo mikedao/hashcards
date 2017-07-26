@@ -16,7 +16,6 @@ attr_reader :card, :response
     end
   end
 
-
   def feedback
     if correct?
       "Correct!"
