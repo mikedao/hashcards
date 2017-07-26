@@ -16,4 +16,8 @@ class Guess
   def feedback
     @guess == @object.answer ? "Correct!" : "Incorrect!"
   end
+
+  def card
+    @object
+  end
 end

@@ -4,7 +4,7 @@ require './lib/guess.rb'
 require 'pry'
 
 class GuessTest < Minitest::Test
-  #def setup
+a #def setup
   #card = Card.new(question: "What is the capital of Alaska?", answer: "Juneau")
   #guess = Guess.new("Juneau", card)
  #end
@@ -24,8 +24,8 @@ class GuessTest < Minitest::Test
   def test_correct_guess
   card = Card.new(question: "What is the capital of Alaska?", answer: "Juneau")
   guess = Guess.new("Juneau", card)
-    result = guess.response
+    result = guess.correct?
 
-    assert_equal result, "Correct"
+    assert_equal result, true
   end
  end
