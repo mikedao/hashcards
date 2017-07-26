@@ -1,6 +1,16 @@
 {
   "Unit Tests": {
     "coverage": {
+      "/Users/marcfidelman/turing/2mod/hashcards/lib/guess.rb": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
       "/Users/marcfidelman/turing/2mod/hashcards/lib/card.rb": [
         null,
         1,
@@ -19,6 +29,6 @@
         null
       ]
     },
-    "timestamp": 1501089688
+    "timestamp": 1501090264
   }
 }

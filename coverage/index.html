@@ -14,14 +14,14 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-26T11:21:28-06:00">2017-07-26T11:21:28-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-26T11:31:04-06:00">2017-07-26T11:31:04-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">57.14%</span></span>
+    (<span class="covered_percent"><span class="red">58.33%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
@@ -31,10 +31,10 @@
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>1</b> files in total.
-    <b>7</b> relevant lines. 
-    <span class="green"><b>4</b> lines covered</span> and
-    <span class="red"><b>3</b> lines missed </span>
+    <b>2</b> files in total.
+    <b>12</b> relevant lines. 
+    <span class="green"><b>7</b> lines covered</span> and
+    <span class="red"><b>5</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -57,6 +57,16 @@
         <td>7</td>
         <td>4</td>
         <td>3</td>
+        <td>0.6</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#21a8ff0060cf74432bf4a439887db969173e3a8e" class="src_link" title="lib/guess.rb">lib/guess.rb</a></td>
+        <td class="red strong">60.0 %</td>
+        <td>8</td>
+        <td>5</td>
+        <td>3</td>
+        <td>2</td>
         <td>0.6</td>
       </tr>
       
@@ -175,6 +185,72 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="21a8ff0060cf74432bf4a439887db969173e3a8e">
+  <div class="header">
+    <h3>lib/guess.rb</h3>
+    <h4><span class="red">60.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Guess</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attr_reader  :response, :card</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def initialize(response, card)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">    @response = response</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">    @card = card</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">end</code>
