@@ -27,5 +27,12 @@ class RoundTest < Minitest::Test
 
     assert_instance_of Guess, guess
     assert_equal 1, round.guesses.count
+    assert_equal 'Correct!', round.guesses.first.feedback
+  end
+
+  def test_it_knows_the_number_of_correct_guesses_after_one_guess
+    guess = round.record_guess("Juneau")
+
+    assert_equal 1, round.number_correct
   end
 end

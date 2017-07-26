@@ -17,4 +17,12 @@ class Round
     guesses << new_guess
     new_guess
   end
+
+  def number_correct
+    score = 0
+    guesses.each do |guess|
+      score += 1 if guess.correct?
+    end
+    score
+  end
 end
