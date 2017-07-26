@@ -2,7 +2,7 @@ require_relative 'test_helper'
 require_relative '../lib/card'
 require_relative '../lib/guess'
 
-class TestGuess < MiniTest::Test
+class GuessTest < MiniTest::Test
   def setup
     @card1 = Card.new(question: "What is the capital of Alaska?", answer: "Juneau")
     @guess1 = Guess.new("Juneau", @card1)

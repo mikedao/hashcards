@@ -1,7 +1,7 @@
 require_relative 'test_helper'
 require_relative '../lib/card'
-class TestCard < MiniTest::Test
 
+class CardTest < MiniTest::Test
   def setup
     @card1 = Card.new(question: "What is the capital of Alaska?", answer: "Juneau")
     @card2 = Card.new(question: "What is the capital of Texas?", answer: "Austin")

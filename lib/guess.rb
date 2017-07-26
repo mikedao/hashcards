@@ -3,6 +3,7 @@ class Guess
   def initialize(response, card)
     @response = response
     @card = card
+    @parent = card
   end
 
   def correct?
