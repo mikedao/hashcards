@@ -1,0 +1,77 @@
+{
+  "Unit Tests": {
+    "coverage": {
+      "/Users/matthewdevoe/turing/2module/classroom/hashcards/lib/guess.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/matthewdevoe/turing/2module/classroom/hashcards/lib/card.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/matthewdevoe/turing/2module/classroom/hashcards/lib/deck.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/matthewdevoe/turing/2module/classroom/hashcards/lib/round.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1501091743
+  }
+}
