@@ -9,7 +9,8 @@ class Round
   end
 
   def current_card
-    current_card = @deck.cards.first
+    count = guesses.count
+    current_card = deck.cards[count]
   end
 
   def record_guess(response)
@@ -17,7 +18,8 @@ class Round
   end
 
   def number_correct
-    correct = guesses.map {|guess| guess.response if guess.correct?}
+    correct = []
+    guesses.map {|guess| correct << guess.response if guess.correct?}
     correct.count
   end
 end

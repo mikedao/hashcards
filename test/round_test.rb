@@ -3,7 +3,7 @@ require_relative "../lib/card.rb"
 require_relative "../lib/deck.rb"
 require_relative "../lib/guess.rb"
 require_relative "../lib/round.rb"
-
+require 'pry'
 class RoundTest <Minitest::Test
 
   def test_round_is_created_with_deck
@@ -53,12 +53,17 @@ class RoundTest <Minitest::Test
   def test_round_number_correct_returns_accurate_count
     card_1 = Card.new(question: "What is the capital of Alaska?", answer: "Juneau")
     card_2 = Card.new(question: "Approximately how many miles are in one astronomical unit?", answer: "93,000,000")
-    deck = Deck.new([card_1, card_2])
+    card_3 = Card.new(question: "Approximately how many miles are in one astronomical unit?", answer: "93")
+    deck = Deck.new([card_1, card_2, card_3])
     round = Round.new(deck)
     round.record_guess("Juneau")
     round.record_guess("93,000,000")
+    round.record_guess("1")
 
     assert_equal "Correct!", round.guesses.first.feedback
+    assert_equal "Correct!", round.guesses[0].feedback
+    assert_equal "Incorrect", round.guesses.last.feedback
+    #binding.pry
     assert_equal 2, round.number_correct
   end
 
