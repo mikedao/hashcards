@@ -7,7 +7,7 @@ class Guess
   end
 
   def feedback
-    ("Correct" if @response == @card.answer) || "Incorrect"
+    ("Correct!" if @response == @card.answer) || "Incorrect"
   end
 
   def correct?

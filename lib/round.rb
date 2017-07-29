@@ -15,4 +15,9 @@ class Round
   def record_guess(response)
     @guesses << Guess.new(response, current_card)
   end
+
+  def number_correct
+    correct = guesses.map {|guess| guess.response if guess.correct?}
+    correct.count
+  end
 end
