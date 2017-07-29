@@ -14,27 +14,27 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-28T22:30:34-06:00">2017-07-28T22:30:34-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-28T22:41:26-06:00">2017-07-28T22:41:26-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">60.0%</span></span>
+    (<span class="covered_percent"><span class="red">63.64%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.6
+         0.65
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>2</b> files in total.
-    <b>15</b> relevant lines. 
-    <span class="green"><b>9</b> lines covered</span> and
-    <span class="red"><b>6</b> lines missed </span>
+    <b>11</b> relevant lines. 
+    <span class="green"><b>7</b> lines covered</span> and
+    <span class="red"><b>4</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -61,13 +61,13 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#6d2565a77602e6852dd1ce201c2da3483edd3c2d" class="src_link" title="lib/guess.rb">lib/guess.rb</a></td>
-        <td class="red strong">60.0 %</td>
-        <td>19</td>
-        <td>10</td>
+        <td class="strong"><a href="#777b0c627406897b673334909f6c46ada29ac01f" class="src_link" title="lib/deck.rb">lib/deck.rb</a></td>
+        <td class="red strong">66.67 %</td>
+        <td>12</td>
         <td>6</td>
         <td>4</td>
-        <td>0.6</td>
+        <td>2</td>
+        <td>0.7</td>
       </tr>
       
     </tbody>
@@ -153,14 +153,14 @@
 </div>
 
       
-        <div class="source_table" id="6d2565a77602e6852dd1ce201c2da3483edd3c2d">
+        <div class="source_table" id="777b0c627406897b673334909f6c46ada29ac01f">
   <div class="header">
-    <h3>lib/guess.rb</h3>
-    <h4><span class="red">60.0 %</span> covered</h4>
+    <h3>lib/deck.rb</h3>
+    <h4><span class="red">66.67 %</span> covered</h4>
     <div>
-      <b>10</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
+      <b>6</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -170,112 +170,70 @@
         <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
-          <code class="ruby">require_relative &quot;card&quot;</code>
+          <code class="ruby">class Deck</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attr_reader :cards</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class Guess</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  attr_reader :response, :card</code>
+          <code class="ruby">  def initialize(cards = [])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">    @cards = cards</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">  def initialize(response, card)</code>
+          <code class="ruby">  def count</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="7">
+        <li class="missed" data-hits="0" data-linenumber="9">
           
           
-          <code class="ruby">    @response = response</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
-          
-          <code class="ruby">    @card = card</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    cards.count</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def feedback</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="12">
-          
-          
-          <code class="ruby">    (&quot;Correct&quot; if @response == @card.answer) || &quot;Incorrect&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def correct?</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="16">
-          
-          
-          <code class="ruby">    true if @response == @card.answer</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">end</code>
