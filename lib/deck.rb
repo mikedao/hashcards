@@ -1,5 +1,8 @@
+require 'pry'
 class Deck
-  def initialize
-    @cards = []
+
+  def initialize(cards = [])
+    @cards = cards
   end
+
 end

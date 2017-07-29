@@ -5,11 +5,11 @@ class Guess
 
   def initialize(response, card)
     @response = response
-    @card = Card.new({})
+    @card = card
   end
 
   def feedback
-    p "Correct" if @response == @card.answer
+    ("Correct" if @response == @card.answer) || "Incorrect"
   end
 
   def correct?
