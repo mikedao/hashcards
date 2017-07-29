@@ -1,5 +1,3 @@
-require_relative "card"
-
 class Guess
   attr_reader :response, :card
 
